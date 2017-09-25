@@ -28,3 +28,6 @@ with open('springer-ebook-url-cleaned.csv', 'rb') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         print(requests.get(row['URL']).url)
+
+### TODO
+# insert redirected URL back into CSV
